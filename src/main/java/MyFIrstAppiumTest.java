@@ -10,7 +10,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class HelloWorldTest {
+public class MyFIrstAppiumTest {
     private static AppiumDriver driver;
     private WebDriverWait wait;
     @BeforeAll
@@ -33,7 +33,11 @@ public class HelloWorldTest {
     public void helloWorldTest(){
         //定义首页搜索框
         driver.findElement(By.id("com.xueqiu.android:id/tv_search")).click();
-        driver.findElement(By.id("com.xueqiu.android:id/search_input_text")).sendKeys("alibaba");
+        driver.findElement(By.id("com.xueqiu.android:id/search_input_text")).sendKeys("阿里巴巴");
+        driver.findElement(By.xpath("//*[@text='BABA']")).click();
+        String price = driver.findElement(By.id("current_price")).getText();
+        System.out.println(price);
+
         //定义搜索页搜索框
 
     }
