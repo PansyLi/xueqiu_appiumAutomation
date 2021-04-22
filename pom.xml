@@ -14,13 +14,13 @@
         </repository>
     </repositories>
 
-    <dependencies>
-    <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+    <dependencies><!-- https://mvnrepository.com/artifact/com.github.appium/java-client -->
         <dependency>
-            <groupId>io.appium</groupId>
+            <groupId>com.github.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>7.5.1</version>
+            <version>969fac6a1c6dd229bdefb02ff10e71c812701e0c</version>
         </dependency>
+    <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
